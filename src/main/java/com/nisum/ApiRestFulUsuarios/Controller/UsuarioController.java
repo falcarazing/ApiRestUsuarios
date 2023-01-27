@@ -49,8 +49,8 @@ public class UsuarioController {
         logger.info("Inicamos la petición de guardado de ususario");
         HttpHeaders responseHeaders = new HttpHeaders();
         responseHeaders.set("Baeldung-Example-Header","Value-ResponseEntityBuilderWithHttpHeaders");
-
-        ResponseUserGet responseUserGet = iUsuariosSer.getUsuarios();
+        ResponseUserGet responseUserGet = new ResponseUserGet();
+        responseUserGet = iUsuariosSer.getUsuarios();
         logger.info("Fin de la petición de guardado de ususario");
         return ResponseEntity.status(responseUserGet.getMetaData().getHttp_code())
                 .headers(responseHeaders)

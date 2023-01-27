@@ -1,0 +1,26 @@
+CREATE DATABASE userbd;
+
+create table "users" (
+  id varchar(255) not null,
+  name varchar(255) not null,
+  email varchar(255) not null,
+  password varchar(255) not null,
+  created timestamp not null,
+  modified timestamp,
+  last_login timestamp not null,
+  token varchar(255) not null,
+  is_active boolean not null,
+  primary key (id)
+);
+
+
+CREATE TABLE phone (
+    id_phone BIGINT NOT NULL,
+    citycode VARCHAR(255) NOT NULL,
+    contrycode VARCHAR(255) NOT NULL,
+    iduser VARCHAR(255),
+    number VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id_phone)
+);
+
+
