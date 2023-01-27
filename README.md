@@ -13,7 +13,7 @@
 
 # -------------Como funciona ---------------------
 # Clone el proyecto a traves del siguiente enlace: 
-# 
+# https://github.com/falcarazing/ApiRestUsuarios
 # abra el proyecto con sus editor favorito, con el mismo editor actualice dependencias
 # o por terminal, en la ubicacion de su proyecto ejecute : mvn dependency:resolve
 # una vez descargadas las dependencias ya puede compilar su proyecto y probar.
